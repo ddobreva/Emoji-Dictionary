@@ -41,5 +41,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="7mf-Gv-vxi">
+            <objects>
+                <viewController id="Ma3-6W-Auc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cmE-5M-K16"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cvt-z7-htg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yG8-dc-ZoN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaZ-es-NfZ">
+                                <rect key="frame" x="79" y="60" width="218" height="239"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a little chicken" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OR-HI-tAg">
+                                <rect key="frame" x="106" y="359" width="163" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0OR-HI-tAg" firstAttribute="centerX" secondItem="yG8-dc-ZoN" secondAttribute="centerX" id="4Lu-EG-lco"/>
+                            <constraint firstItem="CaZ-es-NfZ" firstAttribute="top" secondItem="cmE-5M-K16" secondAttribute="bottom" constant="40" id="Dbz-2Y-O3m"/>
+                            <constraint firstItem="CaZ-es-NfZ" firstAttribute="centerX" secondItem="yG8-dc-ZoN" secondAttribute="centerX" id="F0G-rN-oCb"/>
+                            <constraint firstItem="0OR-HI-tAg" firstAttribute="top" secondItem="CaZ-es-NfZ" secondAttribute="bottom" constant="60" id="aHQ-yc-e8B"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qax-iY-LZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="632.79999999999995" y="138.98050974512745"/>
+        </scene>
     </scenes>
 </document>
