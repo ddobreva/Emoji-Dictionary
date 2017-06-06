@@ -79,6 +79,7 @@
                     </view>
                     <connections>
                         <outlet property="EmojiLabel" destination="CaZ-es-NfZ" id="fFW-Ou-Mzh"/>
+                        <outlet property="definitionLabel" destination="0OR-HI-tAg" id="KlW-ih-RS7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qax-iY-LZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
