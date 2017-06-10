@@ -6,8 +6,9 @@
 //  Copyright © 2017 Denitsa Dobreva. All rights reserved.
 //
 
-class Emoji: <#super class#> {
+class Emoji {
     var stringEmoji = ""
     var category = ""
     var birthYear = 0
+    var definition = ""
 }

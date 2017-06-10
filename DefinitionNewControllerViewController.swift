@@ -12,7 +12,7 @@ class DefinitionNewControllerViewController: UIViewController {
     
     @IBOutlet weak var EmojiLabel: UILabel!
     
-    var emoji = "NO EMOJI"
+    var emoji = Emoji()
     
     @IBOutlet weak var definitionLabel: UILabel!
     
@@ -22,82 +22,13 @@ class DefinitionNewControllerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        EmojiLabel.text = emoji
         
-        if emoji == "😮" {
-        definitionLabel.text = "Surprised"
-            categoryLabel.text = "Smiley"
-            originationDateLabel.text = "2010"
-        }
-        if emoji == "😋" {
-            definitionLabel.text = "Pleased"
-            categoryLabel.text = "Smiley"
-            originationDateLabel.text = "2010"
-
-        }
-        if emoji == "😏" {
-            definitionLabel.text = "Kinky"
-            categoryLabel.text = "Smiley"
-            originationDateLabel.text = "2010"
-
-        }
-        if emoji == "🤓" {
-            definitionLabel.text = "Clever"
-            categoryLabel.text = "Smiley"
-            originationDateLabel.text = "2010"
-
-        }
-        if emoji == "😻" {
-            definitionLabel.text = "Cat in love"
-            categoryLabel.text = "Animal"
-            originationDateLabel.text = "2011"
-        }
-        if emoji == "🦁" {
-            definitionLabel.text = "Cute lion"
-            categoryLabel.text = "Animal"
-            originationDateLabel.text = "2011"
-
-        }
-        if emoji == "💒" {
-            definitionLabel.text = "Little church"
-        }
-        if emoji == "😁" {
-            definitionLabel.text = "Laughing"
-            categoryLabel.text = "Smiley"
-            originationDateLabel.text = "2010"
-
-        }
-        if emoji == "🙊" {
-            definitionLabel.text = "I don't know anything"
-            categoryLabel.text = "Animal"
-            originationDateLabel.text = "2011"
-
-        }
-        if emoji == "🦊" {
-             definitionLabel.text = "A fox"
-            categoryLabel.text = "Animal"
-            originationDateLabel.text = "2011"
-
-        }
-        if emoji == "🦐" {
-            definitionLabel.text = "A little shrimp"
-            categoryLabel.text = "Animal"
-            originationDateLabel.text = "2011"
-
-        }
-        if emoji == "🐺" {
-            definitionLabel.text = "A scary wolf"
-            categoryLabel.text = "Animal"
-            originationDateLabel.text = "2011"
-
-        }
-        if emoji == "🐰" {
-            definitionLabel.text = "Honey bunny"
-            categoryLabel.text = "Animal"
-            originationDateLabel.text = "2011"
-
-        }
-    }
+        EmojiLabel.text = emoji.stringEmoji
+        definitionLabel.text = emoji.definition
+        categoryLabel.text = "Category: \(emoji.category)"
+        originationDateLabel.text = "Origination Date: \(emoji.birthYear)"
+        
+           }
     
     
     
