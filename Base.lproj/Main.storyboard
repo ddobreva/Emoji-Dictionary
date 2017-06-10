@@ -63,7 +63,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a little chicken" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OR-HI-tAg">
-                                <rect key="frame" x="106" y="403" width="163" height="21"/>
+                                <rect key="frame" x="106" y="393" width="163" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Animal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSX-tn-u8Q">
+                                <rect key="frame" x="122" y="436" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OriginationDate: 2011" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hr-C2-zFD">
+                                <rect key="frame" x="105" y="477" width="165" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -71,15 +83,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0OR-HI-tAg" firstAttribute="centerX" secondItem="yG8-dc-ZoN" secondAttribute="centerX" id="4Lu-EG-lco"/>
+                            <constraint firstItem="5Hr-C2-zFD" firstAttribute="centerX" secondItem="yG8-dc-ZoN" secondAttribute="centerX" id="7AH-dt-5fB"/>
                             <constraint firstItem="CaZ-es-NfZ" firstAttribute="top" secondItem="cmE-5M-K16" secondAttribute="bottom" constant="40" id="Dbz-2Y-O3m"/>
                             <constraint firstItem="CaZ-es-NfZ" firstAttribute="centerX" secondItem="yG8-dc-ZoN" secondAttribute="centerX" id="F0G-rN-oCb"/>
-                            <constraint firstItem="0OR-HI-tAg" firstAttribute="top" secondItem="CaZ-es-NfZ" secondAttribute="bottom" constant="60" id="aHQ-yc-e8B"/>
+                            <constraint firstItem="RSX-tn-u8Q" firstAttribute="centerX" secondItem="yG8-dc-ZoN" secondAttribute="centerX" id="Haf-Ad-Nwc"/>
+                            <constraint firstItem="0OR-HI-tAg" firstAttribute="centerX" secondItem="yG8-dc-ZoN" secondAttribute="centerX" id="P5w-d1-Zux"/>
+                            <constraint firstItem="0OR-HI-tAg" firstAttribute="top" secondItem="CaZ-es-NfZ" secondAttribute="bottom" constant="50" id="aHQ-yc-e8B"/>
+                            <constraint firstItem="RSX-tn-u8Q" firstAttribute="top" secondItem="0OR-HI-tAg" secondAttribute="bottom" constant="22" id="cPc-oU-IkF"/>
+                            <constraint firstItem="5Hr-C2-zFD" firstAttribute="top" secondItem="RSX-tn-u8Q" secondAttribute="bottom" constant="20" id="rBB-Oq-GBH"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="EmojiLabel" destination="CaZ-es-NfZ" id="fFW-Ou-Mzh"/>
+                        <outlet property="categoryLabel" destination="RSX-tn-u8Q" id="kvw-6N-7DH"/>
                         <outlet property="definitionLabel" destination="0OR-HI-tAg" id="KlW-ih-RS7"/>
+                        <outlet property="originationDateLabel" destination="5Hr-C2-zFD" id="cY3-wA-fTB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qax-iY-LZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
